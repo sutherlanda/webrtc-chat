@@ -1,0 +1,22 @@
+{
+  "name": "webrtc-chat",
+  "version": "1.0.0",
+  "description": "A simple chat application based on WebRTC",
+  "main": "index.js",
+  "repository": "https://github.com/sutherlanda/webrtc-chat.git",
+  "author": "Andrew Sutherland <sutherlanda@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "react": "^16.3.2",
+    "webrtc": "^1.14.1"
+  },
+  "devDependencies": {
+    "@types/react": "^16.3.13",
+    "@types/react-dom": "^16.0.5",
+    "@types/webrtc": "^0.0.23",
+    "typescript": "^2.8.3",
+    "webpack": "^4.6.0",
+    "webpack-cli": "^2.0.15"
+  }
+}
