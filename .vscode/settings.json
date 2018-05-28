@@ -6,6 +6,6 @@
         "**/CVS": true,
         "**/.DS_Store": true,
         "node_modules": true,
-        "public/dist": true
+        "public/dist": false
     }
 }
