@@ -12,5 +12,6 @@
   "files.insertFinalNewline": true,
   "editor.formatOnSave": true,
   "prettier.singleQuote": false,
-  "tslint.autoFixOnSave": true
+  "tslint.autoFixOnSave": true,
+  "prettier.trailingComma": "all"
 }
