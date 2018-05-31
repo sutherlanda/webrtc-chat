@@ -7,7 +7,6 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "http-server -p 12666",
     "compile": "echo Typescript && tsc -v && webpack && echo Compile complete",
     "build": "tsc -v && npm run sass && webpack && echo Build complete",
     "sass": "node-sass src/styles/styles.scss public/dist/styles.css",
