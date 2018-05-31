@@ -13,13 +13,16 @@
     "sass": "node-sass src/styles/styles.scss public/dist/styles.css",
     "sass-watch": "npm run sass -- -w",
     "watch": "echo Typescript && tsc -v && webpack -w",
+    "start": "http-server -p 5666",
     "lint": "tslint 'src/**/*.{ts,tsx}' -t stylish && echo Linting complete"
   },
   "dependencies": {
+    "mapbox-gl": "^0.45.0",
     "react": "^16.3.2",
     "react-dom": "^16.3.2"
   },
   "devDependencies": {
+    "@types/mapbox-gl": "^0.44.4",
     "@types/react": "^16.3.13",
     "@types/react-dom": "^16.0.5",
     "dotenv": "^5.0.1",

@@ -3,12 +3,12 @@
 $font-stack: Helvetica, sans-serif;
 $primary-color: #333;
 
-.app {
-    height: 80vh;
-}
-
 html,
 body {
-    font: 100% $font-stack;
-    color: $primary-color;
+  font: 100% $font-stack;
+  color: $primary-color;
+}
+
+.app {
+  display: flex;
 }
