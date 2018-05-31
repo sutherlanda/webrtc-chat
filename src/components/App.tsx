@@ -14,7 +14,6 @@ class App extends React.Component<AppProps, AppState> {
     return (
       <div className="app">
         <SideBar />
-        Content goes here
         <Map />
       </div>
     );
