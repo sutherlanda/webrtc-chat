@@ -1,12 +1,13 @@
+import { IConnection } from './IConnection';
 import * as SimplePeer from 'simple-peer';
 import * as SimpleWebSocket from 'simple-websocket';
 import { EventEmitter } from 'events';
 
-export class ClientConnection {
+export class ClientConnection implements IConnection {
 
-    socket: SimpleWebSocket;
-    emitter: EventEmitter;
-    rtc: SimplePeer.Instance;
+    private socket: SimpleWebSocket;
+    private emitter: EventEmitter;
+    private rtc: SimplePeer.Instance;
 
     constructor() {
         this.emitter = new EventEmitter();
@@ -43,15 +44,15 @@ export class ClientConnection {
         });
     }
 
-    onReady = (callback: () => any) => {
+    public onReady(callback: () => any): void {
         this.emitter.on('connected', callback);
     }
 
-    send = (message: string) => {
+    public send(message: string): void {
         this.rtc.send(message);
     }
 
-    onMessage = (callback: () => any) => {
+    public onMessage(callback: (msg: string) => any): void {
         this.emitter.on('message', callback);
     }
 }

@@ -1,12 +1,13 @@
+import { IConnection } from './IConnection';
 import * as SimplePeer from 'simple-peer';
 import * as SimpleWebSocket from 'simple-websocket';
 import { EventEmitter } from 'events';
 
-export class HostConnection {
+export class HostConnection implements IConnection {
 
-    peers: SimplePeer.Instance[];
-    emitter: EventEmitter;
-    socket: SimpleWebSocket;
+    private emitter: EventEmitter;
+    private socket: SimpleWebSocket;
+    private peers: SimplePeer.Instance[];
 
     constructor() {
         this.emitter = new EventEmitter();
@@ -50,17 +51,17 @@ export class HostConnection {
         });
     }
 
-    onReady = (callback: () => any) => {
+    public onReady(callback: () => any): void {
         callback();
     }
 
-    send = (message: string) => {
+    public send(message: string): void {
         this.peers.forEach((peer) => {
             peer.send(message);
         });
     }
 
-    onMessage = (callback: () => any) => {
+    public onMessage(callback: (msg: string) => any): void {
         this.emitter.on('message', callback);
     }
 }
