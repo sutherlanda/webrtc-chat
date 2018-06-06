@@ -16,14 +16,22 @@
     "lint": "tslint 'src/**/*.{ts,tsx}' -t stylish && echo Linting complete"
   },
   "dependencies": {
+    "events": "^3.0.0",
     "mapbox-gl": "^0.45.0",
     "react": "^16.3.2",
-    "react-dom": "^16.3.2"
+    "react-dom": "^16.3.2",
+    "simple-peer": "^9.1.2",
+    "simple-websocket": "^7.0.2",
+    "ws": "^5.2.0"
   },
   "devDependencies": {
+    "@types/events": "^1.2.0",
     "@types/mapbox-gl": "^0.44.4",
     "@types/react": "^16.3.13",
     "@types/react-dom": "^16.0.5",
+    "@types/simple-peer": "^6.1.4",
+    "@types/simple-websocket": "^7.0.0",
+    "@types/ws": "^5.1.1",
     "dotenv": "^5.0.1",
     "http-server": "^0.11.1",
     "node-sass": "^4.9.0",
