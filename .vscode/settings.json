@@ -6,12 +6,13 @@
     "**/CVS": true,
     "**/.DS_Store": true,
     "node_modules": true,
-    "public/dist": true
+    "public/dist": false
   },
   "files.trimFinalNewlines": true,
   "files.insertFinalNewline": true,
   "editor.formatOnSave": true,
   "prettier.singleQuote": false,
   "tslint.autoFixOnSave": true,
-  "prettier.trailingComma": "all"
+  "prettier.trailingComma": "all",
+  "typescript.tsdk": "node_modules/typescript/lib"
 }

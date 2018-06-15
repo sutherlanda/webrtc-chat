@@ -1,28 +1,17 @@
 {
-    "compilerOptions": {
-        "module": "es2015",
-        "moduleResolution": "node",
-        "allowSyntheticDefaultImports": true,
-        "lib": [
-            "dom",
-            "dom.iterable",
-            "es2015",
-            "esnext.asynciterable"
-        ],
-        "noImplicitAny": true,
-        "jsx": "react",
-        "target": "es2017",
-        "noUnusedLocals": true,
-        "importHelpers": true,
-        "experimentalDecorators": true,
-        "emitDecoratorMetadata": true
-    },
-    "include": [
-        "src",
-        "graphiql",
-        "definitions"
-    ],
-    "exclude": [
-        "node_modules"
-    ]
+  "compilerOptions": {
+    "module": "es2015",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "lib": ["dom", "dom.iterable", "es2015", "esnext.asynciterable"],
+    "noImplicitAny": true,
+    "jsx": "react",
+    "target": "es2017",
+    "noUnusedLocals": true,
+    "importHelpers": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
 }
