@@ -17,6 +17,22 @@ class SideBar extends React.Component<AppProps, AppState> {
       connected: false,
       connectionManager: new ConnectionManager(),
     };
+
+    this.updateConnection = this.updateConnection.bind(this);
+  }
+
+  componentWillMount(): void {
+    this.state.connectionManager.onStatusChange(this.updateConnection);
+  }
+
+  componentWillUnmount(): void {
+    this.state.connectionManager.offStatusChange(this.updateConnection);
+  }
+
+  updateConnection(): void {
+    this.setState({
+      connected: this.state.connectionManager.isConnected(),
+    });
   }
 
   render() {
